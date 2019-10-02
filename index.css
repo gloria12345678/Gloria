@@ -93,19 +93,18 @@ background: linear-gradient(to bottom right,#c9b3e2,#99c0dd);
 border-radius:1000px 1000px 0 0;
 }
 .text1{
-font-family: 'HYLingXinTiJ'; 
-background-color: #ffffff8f;
-font-size: 37px;
-z-index: 1;
-padding: 2%;
-color: #ff926c;
-margin-top: 65px;
+  font-family: 'HYLingXinTiJ'; 
+  font-size: 33px;
+  z-index: 1;
+  padding: 2%;
+  color: #ff926c;
+  margin-top: 80px;
 }
 .text1 div{
 border-radius: 28px;
 font-family: 'HYYouYuanTiW';
 width: 500px;
-font-size: 29px;
+font-size: 25px;
 margin-top: 20px;
 color: cornflowerblue;
 background-color: #ffd3826b;
@@ -148,6 +147,7 @@ margin-top: 6%;
 }
 .text3 img{
     height: 35%;
+    margin-top: 10px;
 }
 .past4{
 width: 100%;
