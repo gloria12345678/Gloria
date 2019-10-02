@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      position:absolute;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+       align-items: center;
+       justify-content: center;
+      
+    }
+   
+  </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="i18">
+         
+          <div class="call">
+            <img src="img/iphone.png">
+            <div class="call_text">联系我们</div>
+          </div>
+        </div>
+      <div class="nav1">
+          <div id="nav0" class="nav0"><img src="img/list.png"></div>
+          <div id="nav2" class="nav2" >首页</div>
+          <div id="nav2" class="nav2" >价格表</div>
+          <div id="nav2" class="nav2" >展示模板</div>
+      </div>
+    </div>
+  <!-- Swiper -->
+  <div class="swiper-container">
+      
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="logo" id="logo" style="display: none">
+          <div><img src="img/logo.png">
+            <br>
+            <p>深雪グループ</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide div2">
+          <div class="text1">
+              初&nbsp;回&nbsp;限&nbsp;定&nbsp;2&nbsp;万
+              <br>
+              <div>专业移动端制作</div>
+          </div>
+        <div class="past2">
+            <div class="sample1">
+                <img src="img/sample.png">
+                <div class="text2">
+                    完全定制，拒绝模板制作
+                    <br>
+                    <br>
+                    最快3天可完成
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sample2">
+          <div class="text3">
+            <img src="img/iphon.png" >
+            <br>
+            移动端专门
+            <br>
+            专业手机版网页制作
+          </div>
+          <br>
+          <div class="text3">
+            <img src="img/first.png">
+            <br>
+            完全个性定制
+            <br>
+            没有模板，完全重新定制
+          </div>
+          <br>
+          <div class="text3">
+            <img src="img/do.png">
+            <br>
+            最快3天内完成
+            <br>
+            3个~5个工作日内完成
+          </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+      <div  class="past4">
+          <img src="img/pay.png" style="margin-top: 62px;">
+          <div class="text3 text0">
+             <div class="title_">初回限定2万</div>
+             <hr>
+             <div class="Description">
+             管理费：5000
+             <br>
+             包括：每月域名费用，服务器费用。
+             <br>
+             每月6次更新店员照片、新闻。
+            </div>
+          </div>  
+          <div class="text3">
+          <div class="title_">初期0元</div>
+           <hr>
+           <div class="Description">
+           每月10000管理费
+           <br>
+           包括：每月域名费用，服务器费用。
+             <br>
+           每月6次更新店员照片、新闻。
+          </div>
+          </div>  
+        <div class="text3">
+          <div class="title_">初期5万</div>
+           <hr>
+           <div class="Description">
+           每年5000域名费，一年5000服务器费。
+           <br>
+           免费赠送后台，自行更新店员照片，每日新闻。
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="swiper.min.js"></script>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+  $(window).ready(function(){
+    $("#logo").fadeIn(1800);
+    $(".nav2").animate({right:'-100px'},1200);
+});
+$("#nav0").click(function(){
+  $(".nav2").animate({ display: 'block',right:'0px'});
+    if($('.nav2').css('right') == '0px')
+  {
+      $(".nav2").animate({ display: 'block',right:'-100px'});
+  }
+});
+
+  </script>
+</body>
+</html>
