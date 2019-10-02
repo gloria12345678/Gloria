@@ -116,7 +116,7 @@ background-color: #ffd3826b;
     padding: 2%;
     color: #ff926c;
     position: absolute;
-    top: 345px;
+    top: 270px;
     border-radius: 0 0 55px 0;
     border: 1px solid salmon;
     }
@@ -138,7 +138,7 @@ background-color: #ffffff36;
 border: 2px solid #ffffff;
 border-radius: 30px;
 color: antiquewhite;
-font-size: 24px;
+font-size: 22px;
 padding-top: 3%;
 margin-top: 6%;
 }
@@ -147,7 +147,7 @@ margin-top: 6%;
 }
 .text3 img{
     height: 35%;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .past4{
 width: 100%;
@@ -165,6 +165,6 @@ flex-direction: column;
     color: #9a5976;
 }
 .Description{
-    font-size: 15px;
+    font-size: 13px;
     color: #421a15;
 }
