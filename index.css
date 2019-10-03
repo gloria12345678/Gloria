@@ -168,3 +168,32 @@ flex-direction: column;
     font-size: 13px;
     color: #421a15;
 }
+.smpal4{
+  width: 80%;
+  height: 80%;
+  border-radius: 50px 50px 50px 50px;
+  border: 2px solid #ffffff;
+  background-color: #103b5a;
+ 
+}
+.text5{
+  font-family: 'HYYouYuanTiW';
+  position: absolute;
+  width: 100%;
+  height: 39px;
+  font-size: 25px;
+  color: #14324cab;
+  background-color: #ffffffa6;
+  z-index: 2;
+  top: 343px;
+}
+.photo{
+  width: 80%;
+  height: 80%;
+}
+.photo img{
+  width: 100%;
+  height: 107%;
+  border-radius: 20px 20px 20px 20px;
+  border: 4px solid #ffffff
+}

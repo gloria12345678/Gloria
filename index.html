@@ -25,6 +25,12 @@
       z-index: 0;
       position:absolute;
     }
+    .swiper-container1 {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      position:absolute;
+    }
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -39,8 +45,7 @@
 </head>
 <body>
     <div class="nav">
-        <div class="i18">
-         
+        <div class="i18"> 
           <div class="call">
             <img src="img/iphone.png">
             <div class="call_text">联系我们</div>
@@ -54,8 +59,7 @@
       </div>
     </div>
   <!-- Swiper -->
-  <div class="swiper-container">
-      
+<div class="swiper-container ">  
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="logo" id="logo" style="display: none">
@@ -109,8 +113,8 @@
             3个~5个工作日内完成
           </div>
         </div>
-    </div>
-    <div class="swiper-slide">
+      </div>
+      <div class="swiper-slide">
       <div  class="past4">
           <img src="img/pay.png" style="margin-top: 40px; width: 80px;">
           <div class="text3 text0">
@@ -145,11 +149,44 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <div class="swiper-slide"> 
+          <div class="swiper-container1">
+              <div class="text5">实例展示,向左滑动</div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-color: rgb(101, 41, 40);">
+                  <div class="photo">
+                      <img src="img/home1.png">
+                  </div>
+                </div>
+                <div class="swiper-slide" style="background-color: rgb(64, 37, 37);">
+                    <div class="photo">
+                        <img src="img/home0.png">
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-color: rgb(236, 188, 192);">
+                    <div class="photo">
+                        <img src="img/home2.png">
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-color: rgb(241, 171, 190);">
+                    <div class="photo">
+                        <img src="img/home3.png">
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-color:rgb(255, 182, 130);">
+                    <div class="photo">
+                        <img src="img/home4.png">
+                    </div>
+                </div>
+              </div>
+            </div>
+      </div>   
     <!-- Add Pagination -->
     <!-- <div class="swiper-pagination"></div> -->
   </div>
-
+</div>
+  
   <!-- Swiper JS -->
   <script src="swiper.min.js"></script>
   <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>
@@ -162,6 +199,9 @@
         clickable: true,
       },
     });
+	  var mySwiper = new Swiper('.swiper-container1',{
+    direction : 'horizontal',
+})
   </script>
   <script>
   $(window).ready(function(){
