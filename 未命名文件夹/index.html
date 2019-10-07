@@ -141,7 +141,8 @@
 		_wrapperTranslate=swiper.getWrapperTranslate()
 		console.log();
 		for(i=0;i<anis.length;i++){
-			if(anis[i].offsetTop<(-_wrapperTranslate+swiper.height-50) && anis[i].style.visibility =='hidden'){
+            if(anis[i].offsetTop<(-_wrapperTranslate+swiper.height-50) &&
+             anis[i].style.visibility =='hidden'){
 				anis[i].style.visibility ='visible';
 				anis[i].className = "" + anis[i].classCache + " " + 'animated';
 				}
