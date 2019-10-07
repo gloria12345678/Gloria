@@ -225,12 +225,9 @@
     $("#logo").fadeIn(1800);
     $(".nav2").animate({right:'-100px'},1200); 
 });
-// $("body").on("touchstart", function(e) {
-//   $(document).mousemove(function(event){
-//   console.log( event.pageX , event.pageY);
-//   });
-//   console.log("aaa");
-// });
+$(".swiper-slide").on("touchstart", function() {
+  $(".nav2").animate({right:'-100px'},800); 
+});
 $("#nav0").click(function(){
   $(".nav2").animate({ display: 'block',right:'0px'});
   if($('.nav2').css('right') == '0px')
