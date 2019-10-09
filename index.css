@@ -4,7 +4,6 @@
     justify-content: center;
  }
  .logo p{
-   font-family:genkai-mincho;
    font-size: 24px;
    background-image:-webkit-linear-gradient(bottom,#395262,#7790a0ba); 
    -webkit-background-clip:text; 
@@ -56,10 +55,6 @@
   color:#6f3d63;
   text-align: right;
  }
- @font-face{
-  font-family: 'genkai-mincho'; 
-  src:url('genkai-mincho.ttf');
-}
 @font-face{
   font-family: 'HYLingXinTiJ'; 
   src:url('HYLingXinTiJ.ttf');
